@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_tile.png"]];
+    
     [self startGame];
 
 }
@@ -78,7 +81,7 @@
             [[NSUserDefaults standardUserDefaults] setInteger:HighScore forKey:@"HighScoreSaved"];
         }
         
-        highscorelabel.text = [NSString stringWithFormat:@"High Score: %li", (long)HighScore];
+        highscorelabel.text = [NSString stringWithFormat:@"High Score\n%li", (long)HighScore];
         
         UIAlertController *popup = [UIAlertController alertControllerWithTitle:@"Time is Up" message:[NSString stringWithFormat:@"You Scored %li Points", (long)score] preferredStyle:UIAlertControllerStyleAlert];
         
