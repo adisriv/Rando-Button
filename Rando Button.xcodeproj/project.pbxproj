@@ -15,6 +15,8 @@
 		48419A4C1F3E842D00719BBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48419A4A1F3E842D00719BBA /* LaunchScreen.storyboard */; };
 		48419A571F3E842D00719BBA /* Rando_ButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48419A561F3E842D00719BBA /* Rando_ButtonTests.m */; };
 		48419A621F3E842E00719BBA /* Rando_ButtonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48419A611F3E842E00719BBA /* Rando_ButtonUITests.m */; };
+		48419A751F3EC8A800719BBA /* yo3.png in Resources */ = {isa = PBXBuildFile; fileRef = 48419A731F3EC8A800719BBA /* yo3.png */; };
+		48419A761F3EC8A800719BBA /* yo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 48419A741F3EC8A800719BBA /* yo2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		48419A5D1F3E842E00719BBA /* Rando ButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rando ButtonUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48419A611F3E842E00719BBA /* Rando_ButtonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rando_ButtonUITests.m; sourceTree = "<group>"; };
 		48419A631F3E842E00719BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48419A731F3EC8A800719BBA /* yo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yo3.png; sourceTree = "<group>"; };
+		48419A741F3EC8A800719BBA /* yo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yo2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 		48419A3C1F3E842D00719BBA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				48419A731F3EC8A800719BBA /* yo3.png */,
+				48419A741F3EC8A800719BBA /* yo2.png */,
 				48419A3D1F3E842D00719BBA /* main.m */,
 			);
 			name = "Supporting Files";
@@ -246,7 +252,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48419A761F3EC8A800719BBA /* yo2.png in Resources */,
 				48419A4C1F3E842D00719BBA /* LaunchScreen.storyboard in Resources */,
+				48419A751F3EC8A800719BBA /* yo3.png in Resources */,
 				48419A491F3E842D00719BBA /* Assets.xcassets in Resources */,
 				48419A471F3E842D00719BBA /* Main.storyboard in Resources */,
 			);
