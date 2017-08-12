@@ -25,5 +25,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)leftButtonPressed {
+    
+    NSLog(@"Left Button Pressed!");
+    
+}
+
+- (IBAction)rightButtonPressed {
+    
+    NSLog(@"Right Button Pressed");
+    
+}
+
 
 @end
