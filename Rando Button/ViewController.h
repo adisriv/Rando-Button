@@ -14,10 +14,16 @@
     IBOutlet UILabel *highscorelabel;
     IBOutlet UILabel *timerlabel;
     
+    NSInteger score;
+    NSInteger seconds;
+    NSTimer *timer;
+    NSInteger HighScore;
+    
 }
 
 - (IBAction)leftButtonPressed;
 - (IBAction)rightButtonPressed;
+- (IBAction)playAgain;
 
 
 @end
