@@ -23,7 +23,6 @@
 
 - (IBAction)leftButtonPressed;
 - (IBAction)rightButtonPressed;
-- (IBAction)playAgain;
 
 
 @end

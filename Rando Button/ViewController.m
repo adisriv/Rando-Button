@@ -96,13 +96,5 @@
     
 }
 
-- (IBAction)playAgain {
-    
-    [self startGame];
-
-    
-}
-
-
 
 @end

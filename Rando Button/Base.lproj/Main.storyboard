@@ -58,19 +58,6 @@
                                     <action selector="rightButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Mn-fK-QPm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amL-ey-vdl">
-                                <frame key="frameInset" minX="283" minY="28" width="92" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Restart">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="playAgain" destination="BYZ-38-t0r" eventType="touchUpInside" id="16u-qa-Ako"/>
-                                    <action selector="startGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="cZa-KV-v1c"/>
-                                    <action selector="startgame" destination="BYZ-38-t0r" eventType="touchUpInside" id="5X1-l9-tW6"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time: 15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e78-6z-gSL">
                                 <frame key="frameInset" minX="130" minY="84" width="114" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
