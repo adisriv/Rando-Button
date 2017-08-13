@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		480AB7941F400EE500A1A945 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480AB7931F400EE500A1A945 /* GoogleMobileAds.framework */; };
+		480AB7971F400F8600A1A945 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480AB7961F400F8600A1A945 /* EventKit.framework */; };
+		480AB7991F400F8C00A1A945 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480AB7981F400F8C00A1A945 /* EventKitUI.framework */; };
+		480AB79B1F400F9F00A1A945 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480AB79A1F400F9F00A1A945 /* AVFoundation.framework */; };
+		480AB79D1F400FA900A1A945 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480AB79C1F400FA900A1A945 /* AdSupport.framework */; };
+		480AB79F1F400FCD00A1A945 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480AB79E1F400FCD00A1A945 /* AudioToolbox.framework */; };
+		480AB7A11F400FDB00A1A945 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480AB7A01F400FDB00A1A945 /* CoreGraphics.framework */; };
+		480AB7A31F400FE500A1A945 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480AB7A21F400FE500A1A945 /* CoreTelephony.framework */; };
+		480AB7A51F400FEE00A1A945 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480AB7A41F400FEE00A1A945 /* CoreMedia.framework */; };
+		480AB7A71F400FF800A1A945 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480AB7A61F400FF800A1A945 /* MessageUI.framework */; };
+		480AB7A91F40100100A1A945 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480AB7A81F40100100A1A945 /* StoreKit.framework */; };
+		480AB7AB1F40100A00A1A945 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480AB7AA1F40100A00A1A945 /* SystemConfiguration.framework */; };
 		48419A3E1F3E842D00719BBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48419A3D1F3E842D00719BBA /* main.m */; };
 		48419A411F3E842D00719BBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48419A401F3E842D00719BBA /* AppDelegate.m */; };
 		48419A441F3E842D00719BBA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48419A431F3E842D00719BBA /* ViewController.m */; };
@@ -39,6 +51,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		480AB7931F400EE500A1A945 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		480AB7961F400F8600A1A945 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		480AB7981F400F8C00A1A945 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		480AB79A1F400F9F00A1A945 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		480AB79C1F400FA900A1A945 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		480AB79E1F400FCD00A1A945 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		480AB7A01F400FDB00A1A945 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		480AB7A21F400FE500A1A945 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		480AB7A41F400FEE00A1A945 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		480AB7A61F400FF800A1A945 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		480AB7A81F40100100A1A945 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		480AB7AA1F40100A00A1A945 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		48419A391F3E842D00719BBA /* Rando Button.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rando Button.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48419A3D1F3E842D00719BBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		48419A3F1F3E842D00719BBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,6 +90,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480AB7AB1F40100A00A1A945 /* SystemConfiguration.framework in Frameworks */,
+				480AB7A91F40100100A1A945 /* StoreKit.framework in Frameworks */,
+				480AB7A71F400FF800A1A945 /* MessageUI.framework in Frameworks */,
+				480AB7A51F400FEE00A1A945 /* CoreMedia.framework in Frameworks */,
+				480AB7A31F400FE500A1A945 /* CoreTelephony.framework in Frameworks */,
+				480AB7A11F400FDB00A1A945 /* CoreGraphics.framework in Frameworks */,
+				480AB79F1F400FCD00A1A945 /* AudioToolbox.framework in Frameworks */,
+				480AB79D1F400FA900A1A945 /* AdSupport.framework in Frameworks */,
+				480AB79B1F400F9F00A1A945 /* AVFoundation.framework in Frameworks */,
+				480AB7991F400F8C00A1A945 /* EventKitUI.framework in Frameworks */,
+				480AB7971F400F8600A1A945 /* EventKit.framework in Frameworks */,
+				480AB7941F400EE500A1A945 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +122,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		480AB7951F400F8600A1A945 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				480AB7AA1F40100A00A1A945 /* SystemConfiguration.framework */,
+				480AB7A81F40100100A1A945 /* StoreKit.framework */,
+				480AB7A61F400FF800A1A945 /* MessageUI.framework */,
+				480AB7A41F400FEE00A1A945 /* CoreMedia.framework */,
+				480AB7A21F400FE500A1A945 /* CoreTelephony.framework */,
+				480AB7A01F400FDB00A1A945 /* CoreGraphics.framework */,
+				480AB79E1F400FCD00A1A945 /* AudioToolbox.framework */,
+				480AB79C1F400FA900A1A945 /* AdSupport.framework */,
+				480AB79A1F400F9F00A1A945 /* AVFoundation.framework */,
+				480AB7981F400F8C00A1A945 /* EventKitUI.framework */,
+				480AB7961F400F8600A1A945 /* EventKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		48419A301F3E842D00719BBA = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +147,7 @@
 				48419A551F3E842D00719BBA /* Rando ButtonTests */,
 				48419A601F3E842E00719BBA /* Rando ButtonUITests */,
 				48419A3A1F3E842D00719BBA /* Products */,
+				480AB7951F400F8600A1A945 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +164,7 @@
 		48419A3B1F3E842D00719BBA /* Rando Button */ = {
 			isa = PBXGroup;
 			children = (
+				480AB7931F400EE500A1A945 /* GoogleMobileAds.framework */,
 				48419A3F1F3E842D00719BBA /* AppDelegate.h */,
 				48419A401F3E842D00719BBA /* AppDelegate.m */,
 				48419A421F3E842D00719BBA /* ViewController.h */,
@@ -440,6 +496,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Rando\\ Button",
+				);
 				INFOPLIST_FILE = "Rando Button/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adityasrivastava.Rando-Button";
@@ -451,6 +511,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Rando\\ Button",
+				);
 				INFOPLIST_FILE = "Rando Button/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adityasrivastava.Rando-Button";
@@ -523,6 +587,7 @@
 				48419A681F3E842E00719BBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48419A691F3E842E00719BBA /* Build configuration list for PBXNativeTarget "Rando ButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +596,7 @@
 				48419A6B1F3E842E00719BBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48419A6C1F3E842E00719BBA /* Build configuration list for PBXNativeTarget "Rando ButtonUITests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +605,7 @@
 				48419A6E1F3E842E00719BBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
