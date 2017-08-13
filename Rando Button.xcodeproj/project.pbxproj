@@ -19,6 +19,7 @@
 		480AB7A71F400FF800A1A945 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480AB7A61F400FF800A1A945 /* MessageUI.framework */; };
 		480AB7A91F40100100A1A945 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480AB7A81F40100100A1A945 /* StoreKit.framework */; };
 		480AB7AB1F40100A00A1A945 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480AB7AA1F40100A00A1A945 /* SystemConfiguration.framework */; };
+		480AB7AD1F40102E00A1A945 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480AB7AC1F40102E00A1A945 /* MediaPlayer.framework */; };
 		48419A3E1F3E842D00719BBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48419A3D1F3E842D00719BBA /* main.m */; };
 		48419A411F3E842D00719BBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48419A401F3E842D00719BBA /* AppDelegate.m */; };
 		48419A441F3E842D00719BBA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48419A431F3E842D00719BBA /* ViewController.m */; };
@@ -63,6 +64,7 @@
 		480AB7A61F400FF800A1A945 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		480AB7A81F40100100A1A945 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		480AB7AA1F40100A00A1A945 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		480AB7AC1F40102E00A1A945 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		48419A391F3E842D00719BBA /* Rando Button.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rando Button.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48419A3D1F3E842D00719BBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		48419A3F1F3E842D00719BBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480AB7AD1F40102E00A1A945 /* MediaPlayer.framework in Frameworks */,
 				480AB7AB1F40100A00A1A945 /* SystemConfiguration.framework in Frameworks */,
 				480AB7A91F40100100A1A945 /* StoreKit.framework in Frameworks */,
 				480AB7A71F400FF800A1A945 /* MessageUI.framework in Frameworks */,
@@ -125,6 +128,7 @@
 		480AB7951F400F8600A1A945 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				480AB7AC1F40102E00A1A945 /* MediaPlayer.framework */,
 				480AB7AA1F40100A00A1A945 /* SystemConfiguration.framework */,
 				480AB7A81F40100100A1A945 /* StoreKit.framework */,
 				480AB7A61F400FF800A1A945 /* MessageUI.framework */,
