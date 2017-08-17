@@ -19,7 +19,6 @@
 		480AB7A91F40100100A1A945 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480AB7A81F40100100A1A945 /* StoreKit.framework */; };
 		480AB7AB1F40100A00A1A945 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480AB7AA1F40100A00A1A945 /* SystemConfiguration.framework */; };
 		480AB7AD1F40102E00A1A945 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480AB7AC1F40102E00A1A945 /* MediaPlayer.framework */; };
-		480AB7C71F4024ED00A1A945 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480AB7C61F4024ED00A1A945 /* GoogleMobileAds.framework */; };
 		48419A3E1F3E842D00719BBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48419A3D1F3E842D00719BBA /* main.m */; };
 		48419A411F3E842D00719BBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48419A401F3E842D00719BBA /* AppDelegate.m */; };
 		48419A441F3E842D00719BBA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48419A431F3E842D00719BBA /* ViewController.m */; };
@@ -92,7 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				480AB7C71F4024ED00A1A945 /* GoogleMobileAds.framework in Frameworks */,
 				480AB7AD1F40102E00A1A945 /* MediaPlayer.framework in Frameworks */,
 				480AB7AB1F40100A00A1A945 /* SystemConfiguration.framework in Frameworks */,
 				480AB7A91F40100100A1A945 /* StoreKit.framework in Frameworks */,

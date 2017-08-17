@@ -21,6 +21,7 @@
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_tile.png"]];
     
     [self startGame];
+    [self updatesecondslabel];
 
 }
 
@@ -51,6 +52,8 @@
     
     HighScore = [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"];
     
+    highscorelabel.text = [NSString stringWithFormat:@"High Score\n%li", (long)HighScore];
+    
     seconds = 15;
     score = 0;
     
@@ -79,6 +82,8 @@
             HighScore = score;
             
             [[NSUserDefaults standardUserDefaults] setInteger:HighScore forKey:@"HighScoreSaved"];
+            
+            [[NSUserDefaults standardUserDefaults] synchronize];
         }
         
         highscorelabel.text = [NSString stringWithFormat:@"High Score\n%li", (long)HighScore];
@@ -96,6 +101,22 @@
         [self presentViewController: popup animated:YES completion:nil];
         
     }
+    
+}
+
+- (IBAction)restart {
+    
+    self->seconds = 15;
+    self->score = 0;
+    [self updatesecondslabel];
+    
+}
+
+- (void)updatesecondslabel {
+    
+    self->timerlabel.text = [NSString stringWithFormat:@"Time: %li", (long)self->seconds];
+    self->scorelabel.text = [NSString stringWithFormat:@"Score\n%li", (long)self->score];
+
     
 }
 
