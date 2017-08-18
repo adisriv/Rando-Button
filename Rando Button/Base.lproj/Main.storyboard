@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="fQ5-jF-MaG">
             <objects>
-                <viewController id="dUY-16-iDJ" sceneMemberID="viewController">
+                <viewController id="dUY-16-iDJ" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WNj-eJ-EPA"/>
                         <viewControllerLayoutGuide type="bottom" id="wC2-rb-fng"/>
@@ -36,7 +36,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nh5-16-e03">
                                 <frame key="frameInset" minX="67" minY="203" width="240" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Leaderboards">
+                                <state key="normal" title="High Scores">
                                     <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -70,7 +70,7 @@
         <!--View Controller-->
         <scene sceneID="5vk-rq-Tuv">
             <objects>
-                <viewController id="bt8-CE-ySZ" sceneMemberID="viewController">
+                <viewController id="bt8-CE-ySZ" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7RE-XF-qy3"/>
                         <viewControllerLayoutGuide type="bottom" id="qNW-lB-SMN"/>

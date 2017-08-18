@@ -48,6 +48,7 @@
 
 - (void)startGame {
     
+    
     HighScore = [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"];
     
     highscorelabel.text = [NSString stringWithFormat:@"Highest Level\n%li", (long)HighScore];
@@ -109,6 +110,8 @@
 
         
     }
+        
+    
     
     UIAlertController *popup = [UIAlertController alertControllerWithTitle:@"Time is Up" message:[NSString stringWithFormat:@"You Scored %li Points", (long)score] preferredStyle:UIAlertControllerStyleAlert];
         
@@ -152,6 +155,20 @@
     self->level++;
     self->goalscore = self->goalscore + 100;
     [self updatesecondslabel];
+    
+}
+
+- (void)listofhighscores {
+    
+    NSMutableArray *highscorearray = [NSMutableArray array];
+        
+    [highscorearray addObject:[NSNumber numberWithLong:HighScore]];
+    
+    [highscorearray sortUsingSelector:@selector(compare:)];
+    
+    hs1 = [[highscorearray objectAtIndex:0] integerValue];
+    
+    hs1label.text = [NSString stringWithFormat:@"%li", (long)hs1];
     
 }
 

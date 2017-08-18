@@ -16,9 +16,6 @@
     IBOutlet UILabel *levellabel;
     IBOutlet UILabel *goallabel;
     IBOutlet UILabel *hs1label;
-    IBOutlet UILabel *hs2label;
-    IBOutlet UILabel *hs3label;
-    IBOutlet UILabel *hs4label;
     
     
     NSInteger score;
@@ -27,6 +24,8 @@
     NSInteger level;
     NSTimer *timer;
     NSInteger HighScore;
+    NSInteger hs1;
+
     
 }
 
