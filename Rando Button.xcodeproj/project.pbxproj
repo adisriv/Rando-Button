@@ -32,6 +32,7 @@
 		48419A791F3ECACB00719BBA /* bg_tile.png in Resources */ = {isa = PBXBuildFile; fileRef = 48419A771F3ECACB00719BBA /* bg_tile.png */; };
 		48419A7A1F3ECACB00719BBA /* bg_tile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48419A781F3ECACB00719BBA /* bg_tile@2x.png */; };
 		488F7E761F46A5B80042176C /* space.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 488F7E751F46A5B80042176C /* space.jpg */; };
+		488F7E781F46ADD70042176C /* leaderboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 488F7E771F46ADD70042176C /* leaderboard.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		48419A771F3ECACB00719BBA /* bg_tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_tile.png; sourceTree = "<group>"; };
 		48419A781F3ECACB00719BBA /* bg_tile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_tile@2x.png"; sourceTree = "<group>"; };
 		488F7E751F46A5B80042176C /* space.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = space.jpg; sourceTree = "<group>"; };
+		488F7E771F46ADD70042176C /* leaderboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaderboard.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 		48419A3C1F3E842D00719BBA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				488F7E771F46ADD70042176C /* leaderboard.png */,
 				488F7E751F46A5B80042176C /* space.jpg */,
 				48419A771F3ECACB00719BBA /* bg_tile.png */,
 				48419A781F3ECACB00719BBA /* bg_tile@2x.png */,
@@ -324,6 +327,7 @@
 				48419A791F3ECACB00719BBA /* bg_tile.png in Resources */,
 				48419A751F3EC8A800719BBA /* yo3.png in Resources */,
 				488F7E761F46A5B80042176C /* space.jpg in Resources */,
+				488F7E781F46ADD70042176C /* leaderboard.png in Resources */,
 				48419A491F3E842D00719BBA /* Assets.xcassets in Resources */,
 				48419A7A1F3ECACB00719BBA /* bg_tile@2x.png in Resources */,
 				48419A471F3E842D00719BBA /* Main.storyboard in Resources */,
