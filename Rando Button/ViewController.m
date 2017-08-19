@@ -18,8 +18,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [self startGame];
-    [self updatesecondslabel];
+    //[self startGame];
+    //[self updatesecondslabel];
+    
+    //[self GameStart];
+    
+    UIImage *backgroundImage = [UIImage imageNamed:@"background.png"];
+    
+    UIImageView *backgroundImageView=[[UIImageView alloc]initWithFrame:self.view.frame];
+    backgroundImageView.image=backgroundImage;
+    
+    [self.view insertSubview:backgroundImageView atIndex:0];
+
 
 }
 
@@ -27,6 +37,13 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)GameStart {
+    
+    [self startGame];
+    [self updatesecondslabel];
+    
 }
 
 - (IBAction)leftButtonPressed {
@@ -113,7 +130,7 @@
         
     
     
-    UIAlertController *popup = [UIAlertController alertControllerWithTitle:@"Time is Up" message:[NSString stringWithFormat:@"You Scored %li Points", (long)score] preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *popup = [UIAlertController alertControllerWithTitle:@"Time is Up" message:[NSString stringWithFormat:@"Your Reached Level %li", (long)level] preferredStyle:UIAlertControllerStyleAlert];
         
     UIAlertAction *yah = [UIAlertAction actionWithTitle:@"Play Again" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
             [self startGame];

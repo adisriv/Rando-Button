@@ -32,6 +32,7 @@
 - (IBAction)leftButtonPressed;
 - (IBAction)rightButtonPressed;
 - (IBAction)restart;
+- (IBAction)GameStart;
 
 
 @end
