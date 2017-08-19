@@ -8,11 +8,8 @@
 
 #import "ViewController.h"
 
-@interface ViewController () {
-    
-    BOOL isfirstAppeareanceExecutionDone;
-    
-}
+@interface ViewController ()
+
 
 @end
 
@@ -31,7 +28,7 @@
     dispatch_once(&onceToken, ^{
         [timer invalidate];
     });
-    
+
     UIImage *backgroundImage = [UIImage imageNamed:@"background.png"];
     
     UIImageView *backgroundImageView=[[UIImageView alloc]initWithFrame:self.view.frame];
@@ -52,7 +49,6 @@
     
     [self startGame];
     [self updatesecondslabel];
-    
 }
 
 - (IBAction)StopTimer {
@@ -84,7 +80,7 @@
     
     highscorelabel.text = [NSString stringWithFormat:@"Highest Level\n%li", (long)HighScore];
     
-    seconds = 15;
+    seconds = 3;
     score = 0;
     level = 1;
     goalscore = 50;
@@ -151,7 +147,10 @@
             [self startGame];
         }];
         
-    UIAlertAction *nah = [UIAlertAction actionWithTitle:@"Nah, I'm Done" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){}];
+    UIAlertAction *nah = [UIAlertAction actionWithTitle:@"Nah, I'm Done" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){
+        
+        
+    }];
         
     [popup addAction:yah];
     [popup addAction:nah];
@@ -187,20 +186,6 @@
     self->level++;
     self->goalscore = self->goalscore + 100;
     [self updatesecondslabel];
-    
-}
-
-- (void)listofhighscores {
-    
-    NSMutableArray *highscorearray = [NSMutableArray array];
-        
-    [highscorearray addObject:[NSNumber numberWithLong:HighScore]];
-    
-    [highscorearray sortUsingSelector:@selector(compare:)];
-    
-    hs1 = [[highscorearray objectAtIndex:0] integerValue];
-    
-    hs1label.text = [NSString stringWithFormat:@"%li", (long)hs1];
     
 }
 

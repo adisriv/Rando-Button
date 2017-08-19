@@ -15,8 +15,7 @@
     IBOutlet UILabel *timerlabel;
     IBOutlet UILabel *levellabel;
     IBOutlet UILabel *goallabel;
-    IBOutlet UILabel *hs1label;
-    
+
     
     NSInteger score;
     NSInteger seconds;
@@ -24,8 +23,6 @@
     NSInteger level;
     NSTimer *timer;
     NSInteger HighScore;
-    NSInteger hs1;
-    NSInteger firsttime;
 
     
 }
