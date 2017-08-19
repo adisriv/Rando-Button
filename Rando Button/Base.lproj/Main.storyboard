@@ -200,6 +200,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="StopTimer" destination="BYZ-38-t0r" eventType="touchUpInside" id="ecL-y6-xjb"/>
                                     <segue destination="dUY-16-iDJ" kind="presentation" id="RqK-3a-rYZ"/>
                                 </connections>
                             </button>

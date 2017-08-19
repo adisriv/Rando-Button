@@ -8,7 +8,11 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () {
+    
+    BOOL isfirstAppeareanceExecutionDone;
+    
+}
 
 @end
 
@@ -19,9 +23,14 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     //[self startGame];
-    //[self updatesecondslabel];
+    //[self updatesecondslabel]
     
-    //[self GameStart];
+    [self GameStart];
+
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [timer invalidate];
+    });
     
     UIImage *backgroundImage = [UIImage imageNamed:@"background.png"];
     
@@ -46,6 +55,11 @@
     
 }
 
+- (IBAction)StopTimer {
+    
+    [timer invalidate];
+    
+}
 - (IBAction)leftButtonPressed {
     
     score += arc4random_uniform(50);
@@ -79,6 +93,7 @@
     scorelabel.text = [NSString stringWithFormat:@"Score\n%li", (long)score];
     levellabel.text = [NSString stringWithFormat:@"Level %li", (long)level];
     goallabel.text = [NSString stringWithFormat:@"Goal\n%li", (long)goalscore];
+
     
     timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector: @selector(subtracttime) userInfo: nil repeats:YES];
     

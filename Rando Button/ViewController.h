@@ -25,6 +25,7 @@
     NSTimer *timer;
     NSInteger HighScore;
     NSInteger hs1;
+    NSInteger firsttime;
 
     
 }
@@ -33,7 +34,7 @@
 - (IBAction)rightButtonPressed;
 - (IBAction)restart;
 - (IBAction)GameStart;
-
+- (IBAction)StopTimer;
 
 @end
 
