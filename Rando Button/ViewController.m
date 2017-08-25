@@ -7,13 +7,16 @@
 //
 
 #import "ViewController.h"
+#import <StoreKit/StoreKit.h>
 
-@interface ViewController ()
+@interface ViewController () <SKProductsRequestDelegate, SKPaymentTransactionObserver>
 
 
 @end
 
 @implementation ViewController
+
+#define kAddRanderProductIdentifier @""
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -45,6 +48,133 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)addRander {
+    
+    NSLog(@"User requests to add to Rander");
+    
+    if ([SKPaymentQueue canMakePayments]) {
+        
+        NSLog(@"User can make payments");
+        
+        SKProductsRequest *productsRequest = [[SKProductsRequest alloc] initWithProductIdentifiers:[NSSet setWithObject:kAddRanderProductIdentifier]];
+        
+        productsRequest.delegate = self;
+        [productsRequest start];
+        
+        
+    }
+    else {
+        
+        NSLog(@"User cannot make payments due to parental controls");
+        
+    }
+    
+}
+
+- (void)productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response {
+    
+    SKProduct *validProduct = nil;
+    int count = [response.products count];
+    
+    if (count > 0) {
+        
+        validProduct = [response.products objectAtIndex:0];
+        NSLog(@"Products Available");
+        [self purchase:validProduct];
+        
+    }
+    else {
+        
+        NSLog(@"No Products Available");
+        
+    }
+    
+}
+
+- (void)purchase:(SKProduct *)product {
+    
+    SKPayment *payment = [SKPayment paymentWithProduct:product];
+    
+    [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
+    [[SKPaymentQueue defaultQueue] addPayment:payment];
+    
+}
+
+- (void)restore {
+    
+    [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
+    [[SKPaymentQueue defaultQueue] restoreCompletedTransactions];
+    
+}
+
+- (void)paymentQueueRestoreCompletedTransactionsFinished:(SKPaymentQueue *)queue {
+    
+    NSLog(@"received restored transactions: %lu", (unsigned long)queue.transactions.count);
+    for(SKPaymentTransaction *transaction in queue.transactions){
+        if(transaction.transactionState == SKPaymentTransactionStateRestored){
+            
+            NSLog(@"Transaction state -> Restored");
+            
+            
+            [self doAddtoRander];
+            [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+            break;
+        }
+    }
+    
+}
+
+- (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray<SKPaymentTransaction *> *)transactions {
+    
+    for(SKPaymentTransaction *transaction in transactions) {
+        
+        switch(transaction.transactionState){
+                
+            case SKPaymentTransactionStateDeferred:
+                break;
+                
+            case SKPaymentTransactionStatePurchasing: NSLog(@"Transaction state -> Purchasing");
+                
+                break;
+            case SKPaymentTransactionStatePurchased:
+                
+                [self doAddtoRander];
+                [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+                NSLog(@"Transaction state -> Purchased");
+                break;
+            case SKPaymentTransactionStateRestored:
+                NSLog(@"Transaction state -> Restored");
+                
+                [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+                break;
+            case SKPaymentTransactionStateFailed:
+                
+                if(transaction.error.code == SKErrorPaymentCancelled){
+                    NSLog(@"Transaction state -> Cancelled");
+                    
+                }
+                [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+                break;
+        }
+        
+    }
+    
+}
+
+- (void)doAddtoRander {
+    
+    purchaseTracker = 1;
+    
+    self->newScore += 50;
+    
+}
+
+-(void)trackingadder {
+    
+    newScore = 50;
+    
+}
+
 - (IBAction)GameStart {
     
     [self startGame];
@@ -58,7 +188,16 @@
 }
 - (IBAction)leftButtonPressed {
     
+    if (self->purchaseTracker == 1) {
+        
+        score += arc4random_uniform(self->newScore);
+        
+    }
+    else {
+    
     score += arc4random_uniform(50);
+        
+    }
     
     scorelabel.text = [NSString stringWithFormat:@"Score\n%li", (long)score];
     

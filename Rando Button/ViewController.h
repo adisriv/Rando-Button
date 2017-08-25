@@ -23,6 +23,8 @@
     NSInteger level;
     NSTimer *timer;
     NSInteger HighScore;
+    NSInteger newScore;
+    NSInteger purchaseTracker;
 
     
 }
@@ -32,6 +34,8 @@
 - (IBAction)restart;
 - (IBAction)GameStart;
 - (IBAction)StopTimer;
+- (IBAction)restore;
+- (IBAction)addRander;
 
 @end
 

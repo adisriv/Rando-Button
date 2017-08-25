@@ -20,10 +20,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxT-7c-oIr">
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="KxT-7c-oIr" secondAttribute="height" multiplier="10:3" id="5Cn-gA-w71"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxT-7c-oIr">
+                                <frame key="frameInset" minX="62" minY="315" width="250" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" backgroundImage="restart.png">
                                     <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -34,10 +33,9 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="2Dm-xc-KUG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muR-Np-L3H">
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="muR-Np-L3H" secondAttribute="height" multiplier="10:3" id="R5c-Ps-zUD"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muR-Np-L3H">
+                                <frame key="frameInset" minX="62" minY="191" width="250" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <state key="normal" backgroundImage="startgame.png">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -47,18 +45,16 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="dkb-fO-M0r"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxW-H0-Qhd">
+                                <frame key="frameInset" minX="62" minY="441" width="250" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="special.png"/>
+                                <connections>
+                                    <segue destination="3X3-kR-B8k" kind="show" id="JzX-o5-l7u"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="muR-Np-L3H" firstAttribute="top" secondItem="k06-2b-kxk" secondAttribute="bottom" constant="171" id="Ba8-2o-qV7"/>
-                            <constraint firstItem="muR-Np-L3H" firstAttribute="width" secondItem="KxT-7c-oIr" secondAttribute="width" id="TWj-Wd-c0S"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="KxT-7c-oIr" secondAttribute="trailing" constant="43" id="VHi-Jp-cf2"/>
-                            <constraint firstItem="muR-Np-L3H" firstAttribute="height" secondItem="KxT-7c-oIr" secondAttribute="height" id="ia2-Eg-3y2"/>
-                            <constraint firstItem="KxT-7c-oIr" firstAttribute="leading" secondItem="dru-Px-t3f" secondAttribute="leadingMargin" constant="50" id="n10-Au-HUY"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="muR-Np-L3H" secondAttribute="trailing" constant="47" id="plu-rm-P3H"/>
-                            <constraint firstItem="muR-Np-L3H" firstAttribute="leading" secondItem="dru-Px-t3f" secondAttribute="leadingMargin" constant="46" id="x6t-Ib-VDx"/>
-                            <constraint firstItem="y1p-PV-jiV" firstAttribute="top" secondItem="KxT-7c-oIr" secondAttribute="bottom" constant="225.5" id="x7T-Ra-SgZ"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MBx-8M-f6b"/>
                     <connections>
@@ -195,6 +191,36 @@
             </objects>
             <point key="canvasLocation" x="877.5" y="139.43661971830986"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="6f6-uZ-bnq">
+            <objects>
+                <viewController id="3X3-kR-B8k" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jcw-rA-fmt"/>
+                        <viewControllerLayoutGuide type="bottom" id="RJC-yC-IXM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a5w-bd-Eg2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXe-PI-JtG">
+                                <frame key="frameInset" minX="101" minY="89" width="172" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Increase Rander"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaw-kc-IR1">
+                                <frame key="frameInset" minX="91" minY="248" width="192" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Restore Rander"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J1h-9z-fj3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="412" y="909.89505247376314"/>
+        </scene>
     </scenes>
     <resources>
         <image name="goback.png" width="40" height="40"/>
@@ -203,6 +229,7 @@
         <image name="restart.png" width="250" height="75"/>
         <image name="rightyo.png" width="100" height="100"/>
         <image name="rightyoselected.png" width="100" height="100"/>
+        <image name="special.png" width="250" height="75"/>
         <image name="startgame.png" width="250" height="75"/>
     </resources>
     <inferredMetricsTieBreakers>
