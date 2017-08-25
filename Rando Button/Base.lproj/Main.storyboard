@@ -203,15 +203,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXe-PI-JtG">
-                                <frame key="frameInset" minX="101" minY="89" width="172" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Increase Rander"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaw-kc-IR1">
-                                <frame key="frameInset" minX="91" minY="248" width="192" height="82"/>
+                                <frame key="frameInset" minX="62" minY="368" width="250" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Restore Rander"/>
+                                <state key="normal" backgroundImage="restore.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXe-PI-JtG">
+                                <frame key="frameInset" minX="62" minY="170" width="250" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="addRander.png"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -223,10 +223,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addRander.png" width="250" height="75"/>
         <image name="goback.png" width="40" height="40"/>
         <image name="realyo.png" width="100" height="100"/>
         <image name="realyoselected.png" width="100" height="100"/>
         <image name="restart.png" width="250" height="75"/>
+        <image name="restore.png" width="250" height="75"/>
         <image name="rightyo.png" width="100" height="100"/>
         <image name="rightyoselected.png" width="100" height="100"/>
         <image name="special.png" width="250" height="75"/>

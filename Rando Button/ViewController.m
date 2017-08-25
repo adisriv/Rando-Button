@@ -22,16 +22,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    //[self startGame];
-    //[self updatesecondslabel]
-    
     [self GameStart];
 
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         [timer invalidate];
     });
-
+    
     UIImage *backgroundImage = [UIImage imageNamed:@"background.png"];
     
     UIImageView *backgroundImageView=[[UIImageView alloc]initWithFrame:self.view.frame];
