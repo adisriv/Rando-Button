@@ -16,7 +16,7 @@
 
 @implementation ViewController
 
-#define kAddRanderProductIdentifier @""
+#define kAddRanderProductIdentifier @"tld.AdiSriv.Rander.RanderIAP"
 
 - (void)viewDidLoad {
     [super viewDidLoad];

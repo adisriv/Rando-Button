@@ -25,6 +25,8 @@
     NSInteger HighScore;
     NSInteger newScore;
     NSInteger purchaseTracker;
+    
+    bool areRanderAdded;
 
     
 }
@@ -36,6 +38,8 @@
 - (IBAction)StopTimer;
 - (IBAction)restore;
 - (IBAction)addRander;
+
+
 
 @end
 
