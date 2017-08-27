@@ -49,6 +49,8 @@
 		48B2F8C81F47C4D900EFA5EF /* restart.png in Resources */ = {isa = PBXBuildFile; fileRef = 48B2F8C41F47C4D900EFA5EF /* restart.png */; };
 		48B2F8C91F47C4D900EFA5EF /* highscores@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48B2F8C51F47C4D900EFA5EF /* highscores@2x.png */; };
 		48B2F8CA1F47C4D900EFA5EF /* highscores.png in Resources */ = {isa = PBXBuildFile; fileRef = 48B2F8C61F47C4D900EFA5EF /* highscores.png */; };
+		48DECBD61F52461400BDC731 /* rander@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48DECBD41F52461400BDC731 /* rander@2x.png */; };
+		48DECBD71F52461400BDC731 /* rander.png in Resources */ = {isa = PBXBuildFile; fileRef = 48DECBD51F52461400BDC731 /* rander.png */; };
 		48EAA20D1F4FDAFB00031296 /* special@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48EAA20B1F4FDAFB00031296 /* special@2x.png */; };
 		48EAA20E1F4FDAFB00031296 /* special.png in Resources */ = {isa = PBXBuildFile; fileRef = 48EAA20C1F4FDAFB00031296 /* special.png */; };
 /* End PBXBuildFile section */
@@ -122,6 +124,8 @@
 		48B2F8C41F47C4D900EFA5EF /* restart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = restart.png; sourceTree = "<group>"; };
 		48B2F8C51F47C4D900EFA5EF /* highscores@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "highscores@2x.png"; sourceTree = "<group>"; };
 		48B2F8C61F47C4D900EFA5EF /* highscores.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = highscores.png; sourceTree = "<group>"; };
+		48DECBD41F52461400BDC731 /* rander@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rander@2x.png"; sourceTree = "<group>"; };
+		48DECBD51F52461400BDC731 /* rander.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rander.png; sourceTree = "<group>"; };
 		48EAA20B1F4FDAFB00031296 /* special@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "special@2x.png"; sourceTree = "<group>"; };
 		48EAA20C1F4FDAFB00031296 /* special.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = special.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -223,6 +227,8 @@
 		48419A3C1F3E842D00719BBA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				48DECBD41F52461400BDC731 /* rander@2x.png */,
+				48DECBD51F52461400BDC731 /* rander.png */,
 				48583B0E1F4FFF84005C2395 /* restore@2x.png */,
 				48583B0F1F4FFF84005C2395 /* restore.png */,
 				48583B101F4FFF84005C2395 /* addRander@2x.png */,
@@ -332,7 +338,7 @@
 		48419A311F3E842D00719BBA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Aditya Srivastava";
 				TargetAttributes = {
 					48419A381F3E842D00719BBA = {
@@ -392,6 +398,7 @@
 				48B2F89C1F479F6700EFA5EF /* realyoselected.png in Resources */,
 				48B2F8A41F47AAAD00EFA5EF /* rightyo@2x.png in Resources */,
 				48EAA20E1F4FDAFB00031296 /* special.png in Resources */,
+				48DECBD71F52461400BDC731 /* rander.png in Resources */,
 				48B2F8961F479EA100EFA5EF /* realyo.png in Resources */,
 				48B2F8AB1F47ABF900EFA5EF /* rightyoselected@2x.png in Resources */,
 				48583B121F4FFF84005C2395 /* restore@2x.png in Resources */,
@@ -403,6 +410,7 @@
 				48B2F8CA1F47C4D900EFA5EF /* highscores.png in Resources */,
 				48B2F8B21F47B38200EFA5EF /* background@2x.png in Resources */,
 				48B2F8B01F47B0D300EFA5EF /* background.png in Resources */,
+				48DECBD61F52461400BDC731 /* rander@2x.png in Resources */,
 				48B2F8C81F47C4D900EFA5EF /* restart.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +511,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -551,6 +560,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

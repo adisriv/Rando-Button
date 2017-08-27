@@ -160,20 +160,32 @@
 
 - (void)doAddtoRander {
     
-    purchaseTracker = 1;
+    newScore = 50;
     
-    self->newScore += 50;
+    if (self->trackingScore == 1) {
+    
+        self->newScore += 50;
+        
+    }
+    
+    self->trackingScore = 1;
+    
+    areRanderAdded = YES;
+    
+    [[NSUserDefaults standardUserDefaults] setBool:areRanderAdded forKey:@"areRanderAdded"];
+    
+    [[NSUserDefaults standardUserDefaults] synchronize];
     
 }
 
 -(void)trackingadder {
     
-    newScore = 50;
+    trackingScore = 0;
     
 }
 
 - (IBAction)GameStart {
-    
+
     [self startGame];
     [self updatesecondslabel];
 }
@@ -185,7 +197,11 @@
 }
 - (IBAction)leftButtonPressed {
     
-    if (self->purchaseTracker == 1) {
+    areRanderAdded = [[NSUserDefaults standardUserDefaults] boolForKey:@"areRanderAdded"];
+    
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    if (areRanderAdded) {
         
         score += arc4random_uniform(self->newScore);
         
@@ -202,7 +218,20 @@
 
 - (IBAction)rightButtonPressed {
     
-    score += arc4random_uniform(50);
+    areRanderAdded = [[NSUserDefaults standardUserDefaults] boolForKey:@"areRanderAdded"];
+    
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    if (areRanderAdded) {
+    
+        score = score + arc4random_uniform(50) + self->newScore;
+        
+    }
+    else {
+        
+        score += arc4random_uniform(50);
+        
+    }
     
     scorelabel.text = [NSString stringWithFormat:@"Score \n %li", (long)score];
     
@@ -216,7 +245,7 @@
     
     highscorelabel.text = [NSString stringWithFormat:@"Highest Level\n%li", (long)HighScore];
     
-    seconds = 3;
+    seconds = 15;
     score = 0;
     level = 1;
     goalscore = 50;

@@ -24,6 +24,7 @@
     NSTimer *timer;
     NSInteger HighScore;
     NSInteger newScore;
+    NSInteger trackingScore;
     NSInteger purchaseTracker;
     
     bool areRanderAdded;
