@@ -19,12 +19,16 @@
 		480AB7A91F40100100A1A945 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480AB7A81F40100100A1A945 /* StoreKit.framework */; };
 		480AB7AB1F40100A00A1A945 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480AB7AA1F40100A00A1A945 /* SystemConfiguration.framework */; };
 		480AB7AD1F40102E00A1A945 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480AB7AC1F40102E00A1A945 /* MediaPlayer.framework */; };
+		482E24211F54D10B00A4B302 /* info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 482E241F1F54D10B00A4B302 /* info@2x.png */; };
+		482E24221F54D10B00A4B302 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 482E24201F54D10B00A4B302 /* info.png */; };
+		482E24251F54DF7700A4B302 /* RanderSplash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 482E24231F54DF7700A4B302 /* RanderSplash@2x.png */; };
+		482E24261F54DF7700A4B302 /* RanderSplash.png in Resources */ = {isa = PBXBuildFile; fileRef = 482E24241F54DF7700A4B302 /* RanderSplash.png */; };
+		482E24281F54E22000A4B302 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 482E24271F54E22000A4B302 /* Launch Screen.storyboard */; };
 		48419A3E1F3E842D00719BBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48419A3D1F3E842D00719BBA /* main.m */; };
 		48419A411F3E842D00719BBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48419A401F3E842D00719BBA /* AppDelegate.m */; };
 		48419A441F3E842D00719BBA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48419A431F3E842D00719BBA /* ViewController.m */; };
 		48419A471F3E842D00719BBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48419A451F3E842D00719BBA /* Main.storyboard */; };
 		48419A491F3E842D00719BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48419A481F3E842D00719BBA /* Assets.xcassets */; };
-		48419A4C1F3E842D00719BBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48419A4A1F3E842D00719BBA /* LaunchScreen.storyboard */; };
 		48419A571F3E842D00719BBA /* Rando_ButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48419A561F3E842D00719BBA /* Rando_ButtonTests.m */; };
 		48419A621F3E842E00719BBA /* Rando_ButtonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48419A611F3E842E00719BBA /* Rando_ButtonUITests.m */; };
 		48583B121F4FFF84005C2395 /* restore@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48583B0E1F4FFF84005C2395 /* restore@2x.png */; };
@@ -86,6 +90,11 @@
 		480AB7AA1F40100A00A1A945 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		480AB7AC1F40102E00A1A945 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		480AB7C61F4024ED00A1A945 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../GoogleMobileAdsSdkiOS-7.22.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		482E241F1F54D10B00A4B302 /* info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info@2x.png"; sourceTree = "<group>"; };
+		482E24201F54D10B00A4B302 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		482E24231F54DF7700A4B302 /* RanderSplash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RanderSplash@2x.png"; sourceTree = "<group>"; };
+		482E24241F54DF7700A4B302 /* RanderSplash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RanderSplash.png; sourceTree = "<group>"; };
+		482E24271F54E22000A4B302 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		48419A391F3E842D00719BBA /* Rando Button.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rando Button.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48419A3D1F3E842D00719BBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		48419A3F1F3E842D00719BBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -94,7 +103,6 @@
 		48419A431F3E842D00719BBA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		48419A461F3E842D00719BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48419A481F3E842D00719BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		48419A4B1F3E842D00719BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48419A4D1F3E842D00719BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48419A521F3E842D00719BBA /* Rando ButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rando ButtonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48419A561F3E842D00719BBA /* Rando_ButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rando_ButtonTests.m; sourceTree = "<group>"; };
@@ -216,8 +224,8 @@
 				48419A421F3E842D00719BBA /* ViewController.h */,
 				48419A431F3E842D00719BBA /* ViewController.m */,
 				48419A451F3E842D00719BBA /* Main.storyboard */,
+				482E24271F54E22000A4B302 /* Launch Screen.storyboard */,
 				48419A481F3E842D00719BBA /* Assets.xcassets */,
-				48419A4A1F3E842D00719BBA /* LaunchScreen.storyboard */,
 				48419A4D1F3E842D00719BBA /* Info.plist */,
 				48419A3C1F3E842D00719BBA /* Supporting Files */,
 			);
@@ -227,6 +235,10 @@
 		48419A3C1F3E842D00719BBA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				482E24231F54DF7700A4B302 /* RanderSplash@2x.png */,
+				482E24241F54DF7700A4B302 /* RanderSplash.png */,
+				482E241F1F54D10B00A4B302 /* info@2x.png */,
+				482E24201F54D10B00A4B302 /* info.png */,
 				48DECBD41F52461400BDC731 /* rander@2x.png */,
 				48DECBD51F52461400BDC731 /* rander.png */,
 				48583B0E1F4FFF84005C2395 /* restore@2x.png */,
@@ -383,8 +395,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48419A4C1F3E842D00719BBA /* LaunchScreen.storyboard in Resources */,
 				48B2F8A81F47AB9400EFA5EF /* goback.png in Resources */,
+				482E24281F54E22000A4B302 /* Launch Screen.storyboard in Resources */,
 				48583B151F4FFF84005C2395 /* addRander.png in Resources */,
 				48B2F8AC1F47ABF900EFA5EF /* rightyoselected.png in Resources */,
 				48583B131F4FFF84005C2395 /* restore.png in Resources */,
@@ -395,8 +407,11 @@
 				48B2F89A1F479F5F00EFA5EF /* realyoselected@2x.png in Resources */,
 				48B2F8A21F47AAA200EFA5EF /* rightyo.png in Resources */,
 				48B2F8C91F47C4D900EFA5EF /* highscores@2x.png in Resources */,
+				482E24211F54D10B00A4B302 /* info@2x.png in Resources */,
 				48B2F89C1F479F6700EFA5EF /* realyoselected.png in Resources */,
 				48B2F8A41F47AAAD00EFA5EF /* rightyo@2x.png in Resources */,
+				482E24221F54D10B00A4B302 /* info.png in Resources */,
+				482E24261F54DF7700A4B302 /* RanderSplash.png in Resources */,
 				48EAA20E1F4FDAFB00031296 /* special.png in Resources */,
 				48DECBD71F52461400BDC731 /* rander.png in Resources */,
 				48B2F8961F479EA100EFA5EF /* realyo.png in Resources */,
@@ -404,6 +419,7 @@
 				48583B121F4FFF84005C2395 /* restore@2x.png in Resources */,
 				48EAA20D1F4FDAFB00031296 /* special@2x.png in Resources */,
 				48583B141F4FFF84005C2395 /* addRander@2x.png in Resources */,
+				482E24251F54DF7700A4B302 /* RanderSplash@2x.png in Resources */,
 				48419A491F3E842D00719BBA /* Assets.xcassets in Resources */,
 				48419A471F3E842D00719BBA /* Main.storyboard in Resources */,
 				48B2F8B61F47C1B600EFA5EF /* startgame.png in Resources */,
@@ -480,14 +496,6 @@
 				48419A461F3E842D00719BBA /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		48419A4A1F3E842D00719BBA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				48419A4B1F3E842D00719BBA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

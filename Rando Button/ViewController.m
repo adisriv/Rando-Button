@@ -47,11 +47,11 @@
 
 - (IBAction)addRander {
     
-    NSLog(@"User requests to add to Rander");
+    //NSLog(@"User requests to add to Rander");
     
     if ([SKPaymentQueue canMakePayments]) {
         
-        NSLog(@"User can make payments");
+        //NSLog(@"User can make payments");
         
         SKProductsRequest *productsRequest = [[SKProductsRequest alloc] initWithProductIdentifiers:[NSSet setWithObject:kAddRanderProductIdentifier]];
         
@@ -62,7 +62,7 @@
     }
     else {
         
-        NSLog(@"User cannot make payments due to parental controls");
+        //NSLog(@"User cannot make payments due to parental controls");
         
     }
     
@@ -76,13 +76,13 @@
     if (count > 0) {
         
         validProduct = [response.products objectAtIndex:0];
-        NSLog(@"Products Available");
+        //NSLog(@"Products Available");
         [self purchase:validProduct];
         
     }
     else {
         
-        NSLog(@"No Products Available");
+        //NSLog(@"No Products Available");
         
     }
     
@@ -106,11 +106,11 @@
 
 - (void)paymentQueueRestoreCompletedTransactionsFinished:(SKPaymentQueue *)queue {
     
-    NSLog(@"received restored transactions: %lu", (unsigned long)queue.transactions.count);
+    //NSLog(@"received restored transactions: %lu", (unsigned long)queue.transactions.count);
     for(SKPaymentTransaction *transaction in queue.transactions){
         if(transaction.transactionState == SKPaymentTransactionStateRestored){
             
-            NSLog(@"Transaction state -> Restored");
+            //NSLog(@"Transaction state -> Restored");
             
             
             [self doAddtoRander];
@@ -130,24 +130,24 @@
             case SKPaymentTransactionStateDeferred:
                 break;
                 
-            case SKPaymentTransactionStatePurchasing: NSLog(@"Transaction state -> Purchasing");
+            case SKPaymentTransactionStatePurchasing: //NSLog(@"Transaction state -> Purchasing");
                 
                 break;
             case SKPaymentTransactionStatePurchased:
                 
                 [self doAddtoRander];
                 [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
-                NSLog(@"Transaction state -> Purchased");
+                //NSLog(@"Transaction state -> Purchased");
                 break;
             case SKPaymentTransactionStateRestored:
-                NSLog(@"Transaction state -> Restored");
+                //NSLog(@"Transaction state -> Restored");
                 
                 [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
                 break;
             case SKPaymentTransactionStateFailed:
                 
                 if(transaction.error.code == SKErrorPaymentCancelled){
-                    NSLog(@"Transaction state -> Cancelled");
+                    //NSLog(@"Transaction state -> Cancelled");
                     
                 }
                 [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
