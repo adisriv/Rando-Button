@@ -28,6 +28,7 @@
     NSInteger purchaseTracker;
     
     bool areRanderAdded;
+    bool keepingTrack;
 
     
 }

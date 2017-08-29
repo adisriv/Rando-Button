@@ -35,7 +35,8 @@
     backgroundImageView.image=backgroundImage;
     
     [self.view insertSubview:backgroundImageView atIndex:0];
-
+    
+    
 
 }
 
@@ -160,29 +161,37 @@
 
 - (void)doAddtoRander {
     
-    newScore = 50;
+    newScore = [[NSUserDefaults standardUserDefaults] integerForKey:@"newScore"];
+
     
-    if (self->trackingScore == 1) {
+    NSLog(@"hello you reached me");
+    NSLog(@"Score at Purchase is: %li", (long)newScore);
     
-        self->newScore += 50;
+    if (newScore > 0) {
+
+        NSLog(@"yup, you reached me too");
+        newScore += 50;
         
     }
-    
-    self->trackingScore = 1;
+    else {
+        
+        NSLog(@"first time yo");
+        newScore = 50;
+        
+    }
     
     areRanderAdded = YES;
     
     [[NSUserDefaults standardUserDefaults] setBool:areRanderAdded forKey:@"areRanderAdded"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    [[NSUserDefaults standardUserDefaults] setInteger:newScore forKey:@"newScore"];
     
     [[NSUserDefaults standardUserDefaults] synchronize];
+
     
 }
 
--(void)trackingadder {
-    
-    trackingScore = 0;
-    
-}
 
 - (IBAction)GameStart {
 
@@ -201,9 +210,11 @@
     
     [[NSUserDefaults standardUserDefaults] synchronize];
     
+    newScore = [[NSUserDefaults standardUserDefaults] integerForKey:@"newScore"];
+    
     if (areRanderAdded) {
         
-        score = score + arc4random_uniform(50) + self->newScore;
+        score = score + arc4random_uniform(50) + newScore;
         
     }
     else {
@@ -214,6 +225,9 @@
     
     scorelabel.text = [NSString stringWithFormat:@"Score\n%li", (long)score];
     
+    NSLog(@"Score is: %li", (long)newScore);
+    
+    
 }
 
 - (IBAction)rightButtonPressed {
@@ -222,9 +236,11 @@
     
     [[NSUserDefaults standardUserDefaults] synchronize];
     
-    if (areRanderAdded) {
+    newScore = [[NSUserDefaults standardUserDefaults] integerForKey:@"newScore"];
     
-        score = score + arc4random_uniform(50) + self->newScore;
+    if (areRanderAdded) {
+        
+        score = score + arc4random_uniform(50) + newScore;
         
     }
     else {
@@ -233,7 +249,9 @@
         
     }
     
-    scorelabel.text = [NSString stringWithFormat:@"Score \n %li", (long)score];
+    scorelabel.text = [NSString stringWithFormat:@"Score\n%li", (long)score];
+    
+    NSLog(@"Score is: %li", (long)newScore);
     
 }
 
