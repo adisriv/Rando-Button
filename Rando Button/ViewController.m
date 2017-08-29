@@ -164,18 +164,18 @@
     newScore = [[NSUserDefaults standardUserDefaults] integerForKey:@"newScore"];
 
     
-    NSLog(@"hello you reached me");
-    NSLog(@"Score at Purchase is: %li", (long)newScore);
+    //NSLog(@"hello you reached me");
+    //NSLog(@"Score at Purchase is: %li", (long)newScore);
     
     if (newScore > 0) {
 
-        NSLog(@"yup, you reached me too");
+        //NSLog(@"yup, you reached me too");
         newScore += 50;
         
     }
     else {
         
-        NSLog(@"first time yo");
+        //NSLog(@"first time yo");
         newScore = 50;
         
     }
@@ -223,9 +223,9 @@
         
     }
     
-    scorelabel.text = [NSString stringWithFormat:@"Score\n%li", (long)score];
+    scorelabel.text = [NSString stringWithFormat:@"Rander\n%li", (long)score];
     
-    NSLog(@"Score is: %li", (long)newScore);
+    //NSLog(@"Score is: %li", (long)newScore);
     
     
 }
@@ -249,9 +249,9 @@
         
     }
     
-    scorelabel.text = [NSString stringWithFormat:@"Score\n%li", (long)score];
+    scorelabel.text = [NSString stringWithFormat:@"Rander\n%li", (long)score];
     
-    NSLog(@"Score is: %li", (long)newScore);
+    //NSLog(@"Score is: %li", (long)newScore);
     
 }
 
@@ -261,7 +261,7 @@
     
     HighScore = [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"];
     
-    highscorelabel.text = [NSString stringWithFormat:@"Highest Level\n%li", (long)HighScore];
+    highscorelabel.text = [NSString stringWithFormat:@"Highest Rander\n%li", (long)HighScore];
     
     seconds = 15;
     score = 0;
@@ -269,7 +269,7 @@
     goalscore = 50;
     
     timerlabel.text = [NSString stringWithFormat:@"Time: %li", (long)seconds];
-    scorelabel.text = [NSString stringWithFormat:@"Score\n%li", (long)score];
+    scorelabel.text = [NSString stringWithFormat:@"Rander\n%li", (long)score];
     levellabel.text = [NSString stringWithFormat:@"Level %li", (long)level];
     goallabel.text = [NSString stringWithFormat:@"Goal\n%li", (long)goalscore];
 
@@ -317,14 +317,14 @@
         
         [[NSUserDefaults standardUserDefaults] synchronize];
         
-        highscorelabel.text = [NSString stringWithFormat:@"Highest Level\n%li", (long)level];
+        highscorelabel.text = [NSString stringWithFormat:@"Highest Rander\n%li", (long)level];
 
         
     }
         
     
     
-    UIAlertController *popup = [UIAlertController alertControllerWithTitle:@"Time is Up" message:[NSString stringWithFormat:@"Your Reached Level %li", (long)level] preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *popup = [UIAlertController alertControllerWithTitle:@"Time is Up" message:[NSString stringWithFormat:@"You Reached Level %li", (long)level] preferredStyle:UIAlertControllerStyleAlert];
         
     UIAlertAction *yah = [UIAlertAction actionWithTitle:@"Play Again" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
             [self startGame];
@@ -356,7 +356,7 @@
 - (void)updatesecondslabel {
     
     self->timerlabel.text = [NSString stringWithFormat:@"Time: %li", (long)self->seconds];
-    self->scorelabel.text = [NSString stringWithFormat:@"Score\n%li", (long)self->score];
+    self->scorelabel.text = [NSString stringWithFormat:@"Rander\n%li", (long)self->score];
     self->levellabel.text = [NSString stringWithFormat:@"Level %li", (long)self->level];
     self->goallabel.text = [NSString stringWithFormat:@"Goal\n%li", (long)self->goalscore];
     
