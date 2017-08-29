@@ -203,7 +203,7 @@
     
     if (areRanderAdded) {
         
-        score += arc4random_uniform(self->newScore);
+        score = score + arc4random_uniform(50) + self->newScore;
         
     }
     else {
