@@ -15,6 +15,12 @@
     IBOutlet UILabel *timerlabel;
     IBOutlet UILabel *levellabel;
     IBOutlet UILabel *goallabel;
+    IBOutlet UILabel *button1label;
+    IBOutlet UILabel *button2label;
+    IBOutlet UILabel *button3label;
+    IBOutlet UILabel *gameScore1;
+    IBOutlet UILabel *gameScore2;
+    IBOutlet UILabel *gameScore3;
 
     
     NSInteger score;
@@ -35,6 +41,7 @@
 
 - (IBAction)leftButtonPressed;
 - (IBAction)rightButtonPressed;
+- (IBAction)middleButtonPressed;
 - (IBAction)restart;
 - (IBAction)GameStart;
 - (IBAction)StopTimer;
